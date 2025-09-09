@@ -1,4 +1,4 @@
-# YouTube-Channel-Restricted-Videos-Tool-Scripts
+# YouTube Channel Restricted Videos Tool Scripts
 Small little python scripts to help identify which videos are shown in the YouTube channel videos. Relies and uses HTML saved pages of YouTube channel videos tab for extracting and comparing videos. 
 
 # Dependencies
@@ -64,7 +64,7 @@ Examples:
 4. Download and install all python dependencies using the command "python -r requirements.txt"
 5. Run the script with the following arguments "\<Python Program Executable, likely just python\> html_youtube_parser.py \<html file of the saved YouTube page\> \<restricted or unrestricted depending on which html file you are parsing for YouTube URLs\>.json"
 6. Do step 2 again; but this time, do it for the other html file.
-7. Run the json file diff script to get a result between the two modes with the following arguments "\<Python Program Executable, likely just python\> diff_json.py \<JSON File of the unrestricted mode\>.json \<JSON File of the restricted mode\>.json --results results.json"
+7. Run the json file diff script to get a result between the two modes with the following arguments "\<Python Program Executable, likely just python\> diff_json.py \<JSON File of the unrestricted mode\>.json \<JSON File of the restricted mode\>.json --output results.json"
 8. Open "results.json" in your favorite text exitor to see the results. The section in "only_in_file1" should contain a list of video urls that are only seen in not "Restricted Mode" while the section in "only_in_file2" should contain nothing (or the other way around if you specified the files in step 7 the other way around) 
 
 
